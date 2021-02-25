@@ -13,6 +13,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using WebApplication1.Models;
+using ShoppingCart.IOC;
 
 namespace WebApplication1
 {
@@ -56,7 +57,7 @@ namespace WebApplication1
                 }
                 );
 
-
+            DependencyContainer.RegisterServices(services, Configuration.GetConnectionString("DefaultConnection"));
         }
 
 
