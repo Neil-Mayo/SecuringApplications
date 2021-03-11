@@ -22,4 +22,9 @@
     <ProjectReference Include="..\ShoppingCart.IOC\ShoppingCart.IOC.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="ValuableFiles\" />
+    <Folder Include="wwwroot\pictures\" />
+  </ItemGroup>
+
 </Project>
